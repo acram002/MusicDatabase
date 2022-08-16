@@ -1,13 +1,16 @@
+import java.util.ArrayList;
 
 public class Artist {
 
 	private String artistName;
-	private int artistID;
+	private int artistId;
+	private ArrayList<Album> albums;
 	
-	public Artist(String artistName, int artistID) {
+	
+	public Artist(int artistId, String artistName, ArrayList<Album> albums) {
 		super();
+		this.artistId = artistId;
 		this.artistName = artistName;
-		this.artistID = artistID;
 	}
 	public String getArtistName() {
 		return artistName;
@@ -15,11 +18,11 @@ public class Artist {
 	public void setArtistName(String artistName) {
 		this.artistName = artistName;
 	}
-	public int getArtistID() {
-		return artistID;
+	public int getArtistId() {
+		return artistId;
 	}
-	public void setArtistID(int artistID) {
-		this.artistID = artistID;
+	public void setArtistId(int artistId) {
+		this.artistId = artistId;
 	}
 	
 	
