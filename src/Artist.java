@@ -1,16 +1,25 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 
 public class Artist {
 
 	private String artistName;
 	private int artistId;
-	private ArrayList<Album> albums;
+	//private ArrayList<ArrayList<String>> albums;
+	private ArrayList<String> albums;
 	
 	
-	public Artist(int artistId, String artistName, ArrayList<Album> albums) {
+	public Artist(int artistId, String artistName, ArrayList<String> albums) {
 		super();
 		this.artistId = artistId;
 		this.artistName = artistName;
+		this.albums = albums;
+	}
+	public void setAlbums(ArrayList<String> albums) {
+		this.albums = albums;
+	}
+	public ArrayList<String> getAlbums(){
+		return albums;
 	}
 	public String getArtistName() {
 		return artistName;
